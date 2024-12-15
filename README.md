@@ -82,5 +82,5 @@ The HasSticker also has a Sticker and a Collection. The @MapsId annotation is us
 + In this application, one collector, can make an **auction (*BlindAuction*)** of a sticker he has. The auction has a starting date, an end date, and an initial price. Other collectors can bid for the sticker.
   A bid must offer a price equal to or higher than the current price of the auction. One can bid only when the auction is open (between the starting and end date).
   The auction is called blind because one bids without knowing the other bids. In this case, the association between *BlindAuction* and *Bid* is a @ManyToOne relationship
-  because an auction could have thousands of bids. One consequence of the auction not having a list of bids is that most of the logic is in the service layer.
+  because an auction could have thousands of bids. One consequence of the auction not having a list of bids is that most of the logic is in the service layer. 
 
